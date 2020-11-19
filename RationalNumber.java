@@ -16,6 +16,7 @@ public class RationalNumber extends RealNumber {
         } else {
             numerator = nume;
             denominator = deno;
+            reduce();
         }
     }
 
@@ -117,6 +118,6 @@ public class RationalNumber extends RealNumber {
      * Return a new RationalNumber that this minus the other
      */
     public RationalNumber subtract(RationalNumber other) {
-        return null;
+        return add(other.multiply(new RationalNumber(-1, 1)));
     }
 }
