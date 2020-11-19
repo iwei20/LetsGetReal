@@ -45,7 +45,7 @@ public class RationalNumber extends RealNumber {
      *         denominators, false otherwise.
      */
     public boolean equals(RationalNumber other) {
-        return numerator * other.getDenominator() == denominator * other.getNumerator();
+        return numerator == other.getNumerator() && denominator == other.getDenominator();
     }
 
     /**
@@ -64,7 +64,7 @@ public class RationalNumber extends RealNumber {
      */
     private static int gcd(int a, int b) {
         /* use euclids method or a better one */
-        http: // sites.math.rutgers.edu/~greenfie/gs2004/euclid.html
+        // sites.math.rutgers.edu/~greenfie/gs2004/euclid.html
         return 0;
     }
 
