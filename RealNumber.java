@@ -40,7 +40,7 @@ public class RealNumber {
     }
 
     public boolean equals(RealNumber other) {
-        return Math.abs(value - other.getValue()) <= 1e-6 * value;
+        return Math.abs(value - other.getValue()) <= 1e-9 * value;
     }
 
     public String toString() {
