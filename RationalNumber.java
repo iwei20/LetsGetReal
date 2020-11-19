@@ -37,7 +37,7 @@ public class RationalNumber extends RealNumber {
      *         this RationalNumber but reversed.
      */
     public RationalNumber reciprocal() {
-        return null;
+        return new RationalNumber(denominator, numerator);
     }
 
     /**
