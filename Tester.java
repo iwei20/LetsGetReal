@@ -13,5 +13,6 @@ public class Tester {
         RealNumber threeHalves = zero.add(new RationalNumber(10, 15).reciprocal());
         System.out.println(((RationalNumber) threeHalves).divide(new RationalNumber(2, 4)).multiply(new RationalNumber(9, 3)).subtract(new RationalNumber(9, 1)).equals(zero));
         System.out.println(zero);
+        System.out.println(new RationalNumber((int)1e9, (int)1e6));
     }
 }
