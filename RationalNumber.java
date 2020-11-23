@@ -16,8 +16,8 @@ public class RationalNumber extends RealNumber {
         } else {
             numerator = nume * (int) Math.signum((float) deno);
             denominator = Math.abs(deno);
-            if (nume != 0)
-                reduce();
+            if (nume == 0) denominator = 1;
+            else reduce();
         }
     }
 
