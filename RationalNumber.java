@@ -16,7 +16,8 @@ public class RationalNumber extends RealNumber {
         } else {
             numerator = nume * (int) Math.signum((float) deno);
             denominator = Math.abs(deno);
-            if (nume != 0) reduce();
+            if (nume != 0)
+                reduce();
         }
     }
 
@@ -58,6 +59,7 @@ public class RationalNumber extends RealNumber {
      * @return the value expressed as "3/4" or "8/3"
      */
     public String toString() {
+        if (denominator == 1) return "" + numerator;
         return numerator + "/" + denominator;
     }
 
