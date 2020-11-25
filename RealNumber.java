@@ -39,10 +39,6 @@ public class RealNumber {
         return value;
     }
 
-    public boolean equals(RealNumber other) {
-        return Math.abs(value - other.getValue()) <= 1e-9 * value;
-    }
-
     public String toString() {
         return "" + value;
     }
