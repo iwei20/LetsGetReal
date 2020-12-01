@@ -1,4 +1,4 @@
-public abstract class Number{
+public abstract class Number implements Comparable<Number> {
     public abstract double getValue();
   
     /*return 0 when this Number equals the other RealNumber
