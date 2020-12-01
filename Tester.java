@@ -1,3 +1,4 @@
+import java.util.*;
 public class Tester {
     public static void main(String[] args) {
         RealNumber a = new RealNumber(Math.sqrt(2));
@@ -15,5 +16,10 @@ public class Tester {
         System.out.println(((RationalNumber) threeHalves).divide(new RationalNumber(2, 4)).multiply(new RationalNumber(9, 3)).subtract(new RationalNumber(9, 1)).equals(new RealNumber(0))); // True
         System.out.println(zero); // 0
         System.out.println(new RationalNumber((int)1e9, (int)1e6)); // 1000
+
+        Number[] nums = new Number[]{new RationalNumber(25, 5), new RationalNumber(200, 50), new RealNumber(Math.sqrt(19)), new RationalNumber(18, 4)};
+        System.out.println(Arrays.toString(nums));
+        Arrays.sort(nums);
+        System.out.println(Arrays.toString(nums));
     }
 }
