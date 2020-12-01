@@ -35,7 +35,7 @@ public class RationalNumber extends Number {
     }
 
     public double getValue() {
-        return numerator / denominator;
+        return (double) numerator / denominator;
     }
 
     /**
